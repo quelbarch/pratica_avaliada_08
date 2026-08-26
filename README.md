@@ -14,7 +14,8 @@
 
 O **Loja Games** é uma aplicação React de e-commerce com design futurista (*Nexus Theme*), desenvolvida para simular a navegação, cadastro, gerenciamento de categorias e produtos em uma loja virtual de jogos eletrônicos.
 
-Este repositório contém a interface frontend completa, integrada a uma API REST hospedada no Render (`https://lojagames-3nay.onrender.com`).
+Este repositório contém a interface frontend completa, integrada a uma API REST hospedada no Render:  
+`https://lojagames-3nay.onrender.com`
 
 ### ✨ Destaques & Funcionalidades
 - 🔐 **Autenticação & Proteção de Rotas:**
@@ -29,6 +30,15 @@ Este repositório contém a interface frontend completa, integrada a uma API RES
   - Interface moderna com tema escuro neon/cyberpunk (*Nexus*).
   - Componentes de layout para Catálogo de Produtos, Detalhes do Perfil do Usuário e Carrinho de Compras.
   - Notificações em tempo real estilizadas via `react-toastify`.
+
+### 🔗 Endpoints Integrados
+- `POST /usuarios/cadastrar` — Cadastro de usuário
+- `POST /usuarios/logar` — Autenticação e geração de token JWT
+- `GET /categorias` — Listagem de categorias (Requer Autenticação)
+- `GET /categorias/{id}` — Detalhes da categoria (Requer Autenticação)
+- `POST /categorias` — Criação de categoria (Requer Autenticação)
+- `PUT /categorias` — Atualização de categoria (Requer Autenticação)
+- `DELETE /categorias/{id}` — Remoção de categoria (Requer Autenticação)
 
 ---
 
@@ -80,33 +90,3 @@ src/
  │    └── Service.ts             # Configuração do Axios e métodos HTTP
  ├── App.tsx                     # Componente Raiz e rotas da aplicação
  └── index.css                   # Configurações globais CSS e animações Nexus
-
----
-
-## 🔗 Endpoints e Integração Backend
-A aplicação se conecta à API REST backend hospedada em:
-
-https://lojagames-3nay.onrender.com
-
-Principais endpoints consumidos:
-
-POST /usuarios/cadastrar — Cadastro de usuário
-
-POST /usuarios/logar — Autenticação e geração de token JWT
-
-GET /categorias — Listagem de categorias (Requer Autenticação)
-
-GET /categorias/{id} — Detalhes da categoria (Requer Autenticação)
-
-POST /categorias — Criação de categoria (Requer Autenticação)
-
-PUT /categorias — Atualização de categoria (Requer Autenticação)
-
-DELETE /categorias/{id} — Remoção de categoria (Requer Autenticação)
-
----
-
-## 👩‍💻 Autora
-Desenvolvido por Raquel Barcheta para fins educativos e de aprendizado em desenvolvimento Web Frontend com React & TypeScript.
-
-Projeto educacional sem fins lucrativos.
