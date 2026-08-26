@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-base: #05070d;
+  --bg-surface: #0b0f17;
+}
+
+body {
+  background-color: var(--bg-base);
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.bg-nexus {
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(34, 211, 238, 0.12), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(217, 70, 239, 0.10), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(139, 92, 246, 0.10), transparent 45%),
+    radial-gradient(circle, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+}
+
+.text-gradient-brand {
+  background-image: linear-gradient(90deg, #22d3ee, #8b5cf6, #d946ef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.border-gradient-brand {
+  border-image: linear-gradient(90deg, #22d3ee, #8b5cf6, #d946ef) 1;
+}
+
+@keyframes scan-line {
+  0% { top: -10%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 110%; opacity: 0; }
+}
+
+.animate-scan {
+  animation: scan-line 5s linear infinite;
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+}
