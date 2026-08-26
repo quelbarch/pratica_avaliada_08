@@ -81,7 +81,9 @@ src/
  ├── App.tsx                     # Componente Raiz e rotas da aplicação
  └── index.css                   # Configurações globais CSS e animações Nexus
 
- 🔗 Endpoints e Integração Backend
+---
+
+## 🔗 Endpoints e Integração Backend
 A aplicação se conecta à API REST backend hospedada em:
 
 https://lojagames-3nay.onrender.com
@@ -102,7 +104,9 @@ PUT /categorias — Atualização de categoria (Requer Autenticação)
 
 DELETE /categorias/{id} — Remoção de categoria (Requer Autenticação)
 
-👩‍💻 Autora
+---
+
+## 👩‍💻 Autora
 Desenvolvido por Raquel Barcheta para fins educativos e de aprendizado em desenvolvimento Web Frontend com React & TypeScript.
 
 Projeto educacional sem fins lucrativos.
